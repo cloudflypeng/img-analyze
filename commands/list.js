@@ -35,7 +35,8 @@ const getDirectoryList = (dir, list) => {
 function list(dir = '.') {
   // 遍历并保存dir 下所有带图片路径的目录结构树
   let list = []
-  console.log('list :>> ', list);
+  getDirectoryList('.', list);
+
   const server = createHostServer({
     img: list
   });
