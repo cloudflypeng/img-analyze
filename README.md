@@ -58,6 +58,6 @@ Clone 这个 project
 
 
 ## 截图
+<img width="1512" alt="image" src="https://github.com/cloudflypeng/img-analyze/assets/44285412/a8fe1e1e-24a4-43ac-b18d-49bad22cc03e">
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 
