@@ -11,7 +11,7 @@ import { stat, readFile } from "node:fs/promises";
 import process from 'node:process';
 
 import { join } from "pathe";
-const publicDir = `${__dirname}/dist`
+const publicDir = `${__dirname}`
 
 const calcUrl = (fileName) => {
 
@@ -61,8 +61,8 @@ function createHostServer(json) {
   router.get(
     '/',
     eventHandler(async (event) => {
-
-      const htmlPath = path.join(__dirname, '/dist/index.html');
+      console.log('__dirname :>> ', __dirname);
+      const htmlPath = path.join(__dirname, '/index.html');
 
       const htmlContent = await fs.readFileSync(htmlPath, 'utf-8');
       return htmlContent;
