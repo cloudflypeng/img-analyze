@@ -72,11 +72,9 @@ function createHostServer(json) {
     defineEventHandler((event) => {
       return serveStatic(event, {
         getContents: (id) => {
-
           return readFile(calcUrl(id))
         },
         getMeta: async (id) => {
-
           if (id == 'json') return json
           let stats = await stat(calcUrl(id)).catch(() => { });
           if (!stats || !stats.isFile()) {

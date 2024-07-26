@@ -11,3 +11,5 @@
 
 const imgReg = /\.(jpg|png|svg|gif|jpeg|webp|bmp|tiff)/;
 console.log('object :>> ', imgReg.test('aaa.svg32'));
+
+// 用code run 测试代码的文件
